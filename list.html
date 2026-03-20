@@ -4,69 +4,113 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Kohorst Holdings</title>
-        
-        <link rel="stylesheet" href="styles.css" />
+        <style>
+        body, .content-container, .header, .tree, .small, .sublink_small, .sublink_small:visited {
+            margin: 0;
+            padding: 0;
+        }
+        body, .header, .tree {
+            font-family: monospace;
+        }
+        .content-container {
+            max-width: 800px;
+            margin-left: 1%;
+            padding: 20px;
+            word-wrap: break-word;
+        }
+        .header, .tree {
+            white-space: pre;
+            margin-top: 10px;
+            margin-left: 1%;
+        }
+        .header {
+            font-size: 14px;
+        }
+        .tree {
+            line-height: 1;
+            font-size: 18px;
+        }
+        .small, .sublink_small {
+            font-size: 14px;
+            text-wrap: auto;
+        }
+        .sublink_small {
+            color: black;
+        }
+        .sublink_small:visited {
+            color: gray;
+        }
+        #time-display {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: #f0f0f0;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
     </head>
     <body>
-        <p><a href="/">home</a></p>
-    <div>
-        <h2># Projects</h2>
-        <div>
-            <ul>
-            <li><a href="https://dead-vs-alive.polsia.app/"><code>dead vs. alive</code></a>: Fully agentic company built on Polsia, focused on a DIT newsletter with Pangram verifiction</li>
-            <li><a href="https://generations.work"><code>generations</code></a>: Casual word game focused on improving AI literacy</li>
-            <li><a href="https://adj.news"><code>adjacent</code></a>: Forward looking news (spun out) </li>
-            <li><a href="https://github.com/kevlarxyz"><code>kevlar</code></a>: An extremely in progress flexible warm custody solution (largely <a href="https://github.com/immutability-io/vault-ethereum">forked</a> with ambitious plans to expand) (shut down)</li>
-            <li><a href="https://markbase.garden"><code>markbase</code></a>: One click publish your notes and create your digital garden (shut down)</li>
-            <li><a href="https://github.com/InquireAI"><code>inquire</code></a>: A personified telegram chat bot (shut down)</li>
-            </ul>
-        </div>
-        
-        <h2># Writing</h2>
-        <div>
-            <ul>
-            <li><a href="/writing/ramblings_on_event_markets.html"><code>event markets</code></a>: Ramblings on Event Marketse</li>
-            <li><a href="/writing/defi_derivatives_2022.html"><code>defi derivatives</code></a>: Ramblings on DeFi Derivatives (2022)</li>
-            <li><a href="/writing/ramblings_on_amms_and_orderbooks.html"><code>amms and orderbooks</code></a>: Ramblings on AMMs and Orderbooks</li>
-            <li><a href="/writing/ramblings_on_blockspace.html"><code>blockspace</code></a>: Ramblings on Blockspace</li>
-            </ul>
-        </div>
+        <div class="content-container">
+                <p><a href="http://kohor.st">home</a></p>
+            <div>
+                <h2># Projects</h2>
+                <div>
+                    <ul>
+                    <li><a href="https://dead-vs-alive.polsia.app/"><code>dead vs. alive</code></a>: Fully agentic company built on Polsia, focused on a DIT newsletter with Pangram verifiction</li>
+                    <li><a href="https://generations.work"><code>generations</code></a>: Casual word game focused on improving AI literacy</li>
+                    <li><a href="https://adj.news"><code>adjacent</code></a>: Forward looking news (spun out) </li>
+                    <li><a href="https://github.com/kevlarxyz"><code>kevlar</code></a>: An extremely in progress flexible warm custody solution (largely <a href="https://github.com/immutability-io/vault-ethereum">forked</a> with ambitious plans to expand) (shut down)</li>
+                    <li><a href="https://markbase.garden"><code>markbase</code></a>: One click publish your notes and create your digital garden (shut down)</li>
+                    <li><a href="https://github.com/InquireAI"><code>inquire</code></a>: A personified telegram chat bot (shut down)</li>
+                    </ul>
+                </div>
+                
+                <h2># Writing</h2>
+                <div>
+                    <ul>
+                    <li><a href="/writing/ramblings_on_event_markets.html"><code>event markets</code></a>: Ramblings on Event Marketse</li>
+                    <li><a href="/writing/defi_derivatives_2022.html"><code>defi derivatives</code></a>: Ramblings on DeFi Derivatives (2022)</li>
+                    <li><a href="/writing/ramblings_on_amms_and_orderbooks.html"><code>amms and orderbooks</code></a>: Ramblings on AMMs and Orderbooks</li>
+                    <li><a href="/writing/ramblings_on_blockspace.html"><code>blockspace</code></a>: Ramblings on Blockspace</li>
+                    </ul>
+                </div>
 
-        <h2># Podcasts</h2>
-        <div>
-            <ul>
-            <li><a href="https://open.spotify.com/episode/5bAL4v00j2BGJS7KLMvs6h?si=9f25b51632174270"><code>scraping bits</code></a>: Validators can sell future blockspace?</li>
-            <li><a href="https://open.spotify.com/episode/2TUnT4vIWUSxDu21vvrXRe?si=sgxvjF9mQ5uo34_336M64Q"><code>exit liquidity</code></a>: DeFi Derivatives</li>
-            </ul>
-        </div>
+                <h2># Podcasts</h2>
+                <div>
+                    <ul>
+                    <li><a href="https://open.spotify.com/episode/5bAL4v00j2BGJS7KLMvs6h?si=9f25b51632174270"><code>scraping bits</code></a>: Validators can sell future blockspace?</li>
+                    <li><a href="https://open.spotify.com/episode/2TUnT4vIWUSxDu21vvrXRe?si=sgxvjF9mQ5uo34_336M64Q"><code>exit liquidity</code></a>: DeFi Derivatives</li>
+                    </ul>
+                </div>
 
-        <h2># Awesome Lists</h2>
-        <div>
-            <ul>
-            <li><a href="https://github.com/0xperp/defi-derivatives"><code>defi-derivatives</code></a>: A hopefully comprehensive guide to the defi derivative landscape</li>
-            <li><a href="https://github.com/0xperp/awesome-stablecoins"><code>awesome-stablecoins</code></a>: A hopefully comprehensive guide to the stablecoin landscape</li>
-            <li><a href="https://github.com/0xperp/awesome-squeeth"><code>awesome-squeeth</code></a>: List of Squeeth Resources and Threads</li>
-            <li><a href="https://github.com/0xperp/awesome-amm/"><code>awesome-amm</code></a>: Collection of AMMs, Orderbooks, and everything in between</li>
-            <li><a href="https://github.com/0xperp/awesome-blockspace/"><code>awesome-blockspace</code></a>: Overview of Blockspace its demand, pricing, and trading</li>                
-            <li><a href="https://github.com/0xperp/awesome-prediction-markets"><code>awesome-prediction-markets</code></a>: Prediction Markets</li>                
-            <li><a href="https://github.com/0xperp/awesome-fee-markets"><code>awesome-fee-markets</code></a>: Fee Markets</li>                
-            <li><a href="https://github.com/0xperp/awesome-defi-2020"><code>awesome-defi-2020</code></a>: [Archive] DeFi 2020</li>                
-            </ul>
-        </div>
+                <h2># Awesome Lists</h2>
+                <div>
+                    <ul>
+                    <li><a href="https://github.com/0xperp/defi-derivatives"><code>defi-derivatives</code></a>: A hopefully comprehensive guide to the defi derivative landscape</li>
+                    <li><a href="https://github.com/0xperp/awesome-stablecoins"><code>awesome-stablecoins</code></a>: A hopefully comprehensive guide to the stablecoin landscape</li>
+                    <li><a href="https://github.com/0xperp/awesome-squeeth"><code>awesome-squeeth</code></a>: List of Squeeth Resources and Threads</li>
+                    <li><a href="https://github.com/0xperp/awesome-amm/"><code>awesome-amm</code></a>: Collection of AMMs, Orderbooks, and everything in between</li>
+                    <li><a href="https://github.com/0xperp/awesome-blockspace/"><code>awesome-blockspace</code></a>: Overview of Blockspace its demand, pricing, and trading</li>                
+                    <li><a href="https://github.com/0xperp/awesome-prediction-markets"><code>awesome-prediction-markets</code></a>: Prediction Markets</li>                
+                    <li><a href="https://github.com/0xperp/awesome-fee-markets"><code>awesome-fee-markets</code></a>: Fee Markets</li>                
+                    <li><a href="https://github.com/0xperp/awesome-defi-2020"><code>awesome-defi-2020</code></a>: [Archive] DeFi 2020</li>                
+                    </ul>
+                </div>
 
-        <h2># Twitter Lists</h2>
-        <div>
-            <ul>
-            <li><a href="https://twitter.com/i/lists/1575086212204879872"><code>blockspace</code></a>: Collection of accounts to follow around blockspace</li>
-            <li><a href="https://twitter.com/i/lists/1477475783916539906"><code>derivatives</code></a>: DeFi Derivatives</li>
-            <li><a href="https://twitter.com/i/lists/1558447454256766977"><code>mm / research</code></a>: Small market makers and research firms</li>
-            <li><a href="https://twitter.com/i/lists/1569809458070700032"><code>small vcs</code></a>: Small venture funds</li>
-            <li><a href="https://twitter.com/i/lists/1628741322256404490"><code>custody</code></a>: List of new age custody providers</li>
-            </ul>
-        </div>
+                <h2># Twitter Lists</h2>
+                <div>
+                    <ul>
+                    <li><a href="https://twitter.com/i/lists/1575086212204879872"><code>blockspace</code></a>: Collection of accounts to follow around blockspace</li>
+                    <li><a href="https://twitter.com/i/lists/1477475783916539906"><code>derivatives</code></a>: DeFi Derivatives</li>
+                    <li><a href="https://twitter.com/i/lists/1558447454256766977"><code>mm / research</code></a>: Small market makers and research firms</li>
+                    <li><a href="https://twitter.com/i/lists/1569809458070700032"><code>small vcs</code></a>: Small venture funds</li>
+                    <li><a href="https://twitter.com/i/lists/1628741322256404490"><code>custody</code></a>: List of new age custody providers</li>
+                    </ul>
+                </div>
 
-        <p><a href="/">home</a></p>
-
+                <p><a href="https://kohor.st">home</a></p>
+            </div>
     </body>
 </html>
    

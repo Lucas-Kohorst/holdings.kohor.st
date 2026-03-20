@@ -41,9 +41,6 @@
         .sublink_small:visited {
             color: gray;
         }
-        #adjacent-press {
-            margin-top: 20px;
-        }
         #time-display {
             position: fixed;
             bottom: 10px;
@@ -52,61 +49,20 @@
             padding: 5px;
             border: 1px solid #ccc;
         }
-        #rss-feed-press {
-            padding-left: 20px;
-            font-size: 14px;
-        }
-
-        #rss-feed-press a {
-            color: black;
-            text-decoration: underline dotted;
-        }
-
-        #rss-feed-press a:visited {
-            color: blue;
-        }
-
-        #rss-feed-news {
-            padding-left: 20px;
-            font-size: 14px;
-        }
-
-        #rss-feed-news a {
-            color: black;
-            text-decoration: underline dotted;
-        }
-
-        #rss-feed-news a:visited {
-            color: blue;
-        }
-
-        .rss-item {
-            display: flex;
-            align-items: flex-start;
-            padding: 0.25em;
-        }
-
-        .rss-item::before {
-            content: "├──";
-            margin-right: 5px;
-        }
-
-        .rss-item:last-child::before {
-            content: "└──";
-        }
     </style>
 </head>
 <body>
 <div class="content-container">
-<div class="tree">
-<a class="small" style="font-style: italic;">a personal and agentic holding company</a>
-<a class="small">building, writing, and investing in niche markets</a>
-<a href="/list.html" class="small">all projects</a>
-</div>
-<div id="time-display" style="text-align: right;">
-<span id="sf-time"></span><br>
-<span id="nyc-time" style="text-align: left;"></span><br>
-<span id="london-time" style="display: flex; justify-content: space-between;"></span>
+    <div class="tree">
+    <p><a href="http://kohor.st">home</a></p>
+    <a class="small" style="font-style: italic;">a personal and agentic holding company</a>
+    <a class="small">building, writing, and investing in niche markets</a>
+    <a href="/list.html" class="small">all projects</a>
+    </div>
+    <div id="time-display" style="text-align: right;">
+    <span id="sf-time"></span><br>
+    <span id="nyc-time" style="text-align: left;"></span><br>
+    <span id="london-time" style="display: flex; justify-content: space-between;"></span>
 </div>
 
 </div>
